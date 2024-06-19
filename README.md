@@ -47,3 +47,27 @@ In addition, I also recalled two searching algorithms: Binary Search and Linear 
 The Array data structure is one of the simplest data structures that we normally use. It is so versatile. The other one is linked lists, which is basically just an array but with multiple nodes. A node is its simplest element containing the data and a pointer to the next value or the previous value. Typically, linked lists are used if the memory allocation needed is dynamic. Arrays have fixed size while linked lists can be dynamic with its size. Another main benefit of using linked lists is its constant time in deleting and inserting new data. In arrays, the shifting of other elements is required.
 
 That's it for today! Tomorrow I'll focus on Stacks, Queues, and Hash Tables!
+
+### <mark style="background-color: #344966"> Day 03: Data Structers and Algorithms Pt. 2 (Stacks, Queues, Hash Map) </mark>
+
+After the two most basic DSA, arrays and linked list, I moved on to the next DS. Stacks are basically, well, stacks. Its a data structure than is similar to a stack of blocks. In a stack, the only thing that you can do is to look at the top part, get the top part, or add to the top part. Thus, in programming, a stack has the following operations:
+1. push() - to add elements at the top
+2. pop() - to remove elements at the top
+3. peek() - to check the value of the element at the top
+4. is_empty() - to check if the stack is empty
+5. size() - to determine the stack size.
+
+We can think of stack as a LIFO data structure. The last element that is put in is the first element to get out. In contrast, a FIFO system is represented by a queue, similar to how line queues work. It has the following methods:
+1. enqueue() - to add elements at the end of the queue
+2. dequeue() - to process the earliest element added into the queue
+3. peek() - to check who is the first element in the queue
+4. is_empty() - to check if the queue is empty
+5. size() - to determine the size
+
+Due to these, stacks and queues usually have a constant time in terms of insertion and deletion of elements. However, searching an element through a stack and queue usually takes $O(n)$ time. Thus, we still need a data structure that can have $O(n)$ time in searching, inserting, and deleting an element. Hash tables are designed to do just that. They are intented to be data structures that are fast to work with. Firstly, we have hash tables. Hash tables are obtained by initializing an empty array with size $n$. A hash function is usually used to determine its key. For example, a value "Hi" can have a hash value of $1$. Thus, it will be stored to the hash table at index $1$. However, there are only finite values of $n$ that we can use. In most cases, $n$ is small such that collisions can occur. This means that two different values can have the same hash value. Two of the most commonly known implementations of a hash table is the hash set and a hash map. Typically, hash set is used if each element we are going to store is unique while hash maps are used when we want a key-value pair. Both of them has these methods:
+1. contains() - to check if the element is already in the table
+2. add() - to add new elements to the table
+3. remove() - to remove elements in the table
+4. size() - to check the size of the table
+
+That's it for today! Its a bit simple because I only have a short amount of time left to study for today. But tomorrow will be about Trees and Graphs! And possibly on Friday, we will be dealing with Shortest Path algorithms.
